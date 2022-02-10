@@ -26,9 +26,7 @@ module.exports = {
 			'gray-light': '#d3dce6'
 		},
 		fontFamily: {
-			lato: ['Lato'],
-			sans: ['Graphik', 'sans-serif'],
-			serif: ['Merriweather', 'serif']
+			lato: ['Lato']
 		},
 		extend: {
 			spacing: {

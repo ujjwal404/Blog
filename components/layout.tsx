@@ -10,7 +10,7 @@ const Layout = ({ children }: Props) => {
 	return (
 		<div className="min-h-screen flex flex-col">
 			<Head>
-				<title>Vault</title>
+				<title>Blog</title>
 				<meta name="description" content="Secure your app using cryptographic algorithms" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
