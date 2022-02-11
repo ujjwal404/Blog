@@ -12,6 +12,7 @@ module.exports = {
 		colors: {
 			transparent: 'transparent',
 			primary: '#30a692',
+			'bg-gray': '#fafafa',
 			blue: '#1fb6ff',
 			purple: '#7e5bef',
 			pink: '#ff49db',
@@ -22,11 +23,12 @@ module.exports = {
 			midnight: '#121063',
 			yellow: '#ffc82c',
 			'gray-dark': '#273444',
-			gray: '#f0f0f0',
-			'gray-light': '#d3dce6'
+			gray: '#f9f9f9',
+			graylight: '#d3dce6'
 		},
 		fontFamily: {
-			lato: ['Lato']
+			lato: ['Lato'],
+			mono: ['SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New']
 		},
 		extend: {
 			spacing: {

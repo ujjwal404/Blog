@@ -6,13 +6,14 @@ const postsDirectory = join(process.cwd(), '_posts');
 
 // get files names in the _posts directory
 export function getPostSlugs() {
-	return fs.readdirSync(postsDirectory);
+	const slugs = fs.readdirSync(postsDirectory);
+	return slugs.map((slug) => slug.replace(/\.md$/, ''));
 }
 
 // gives the data of the post
 export function getPostBySlug(slug: string, fields: string[] = []) {
-	const realSlug = slug.replace(/\.md$/, '');
-	const fullPath = join(postsDirectory, `${realSlug}.md`);
+	//const realSlug = slug.replace(/\.md$/, '');
+	const fullPath = join(postsDirectory, `${slug}.md`);
 	const fileContents = fs.readFileSync(fullPath, 'utf8');
 	// frontmatter and content
 	const { data, content } = matter(fileContents);
@@ -26,7 +27,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 	// ensure only the minimal needed data is exposed
 	fields.forEach((field) => {
 		if (field === 'slug') {
-			items[field] = realSlug;
+			items[field] = slug;
 		}
 		if (field === 'content') {
 			items[field] = content;
