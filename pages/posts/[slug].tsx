@@ -7,16 +7,21 @@ import PostBody from '../../components/post-body';
 
 export default function Post({ post }: any) {
 	return (
-		<>
+				<div>
 			<Head>
 				<title>{post.title}</title>
 			</Head>
+			<div className="max-w-4xl mx-auto mt-10">
+			<h1 className='text-5xl'>
 			{post.title}
-			<br />
+			</h1>
+
 			<Date dateString={post.date} />
 			<br />
+						<br />
+			</div>
 			<PostBody content={post.content} />
-		</>
+		</div>
 	);
 }
 

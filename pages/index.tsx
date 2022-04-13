@@ -9,23 +9,26 @@ type Props = {
 
 const Home = ({ allPostsData }: Props) => {
 	return (
-		<div className="flex flex-col">
-			{allPostsData.map((post) => (
-				<>
-					<div className="mb-4">
-						<div>
-							<Link href={`/posts/${post.slug}`}>
-								<a className="text-2xl font-bold">{post.title}</a>
-							</Link>
-							<p className="text-lg">{post.excerpt}</p>
-						</div>
-						<div className="flex flex-row">
-							<div className="flex flex-col">
-								<Date dateString={post.date} />
-							</div>
-						</div>
-					</div>
-				</>
+		<div className="flex flex-col max-w-6xl mx-auto divide-y divide-border">
+			{allPostsData.map((post,idx) => (
+				<div key={idx} className='m-2 h-36 relative'>
+					<Link href={`/posts/${post.slug}`}>
+							<a>
+									<div className="">
+										<div className='absolute inset-y-10'>
+											<div className='text-3xl'>
+													{post.title}
+											</div>
+											<div className="flex flex-row">
+												<div className="flex flex-col">
+													<Date dateString={post.date} />
+												</div>
+											</div>
+										</div>
+									</div>
+							</a>		
+					</Link>
+				</div>
 			))}
 		</div>
 	);

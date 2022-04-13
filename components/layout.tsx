@@ -8,14 +8,14 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
 	return (
-		<div className="min-h-screen flex flex-col">
+		<div className="min-h-screen flex flex-col dark:bg-darkBG dark:text-textgray">
 			<Head>
-				<title>Blog</title>
-				<meta name="description" content="Secure your app using cryptographic algorithms" />
+				<title>Macros</title>
+				<meta name="description" content="Personal Blog site" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<header>
-				<Navbar />
+				<Navbar/>
 			</header>
 			<div className="flex flex-col md:flex-row flex-1">
 				<main className="flex-1">{children}</main>

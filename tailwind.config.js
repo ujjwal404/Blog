@@ -18,13 +18,19 @@ module.exports = {
 			pink: '#ff49db',
 			orange: '#ff7849',
 			black: '#000000',
+			blacktwo : '#1d1d1d',
 			white: '#ffffff',
 			green: '#13ce66',
 			midnight: '#121063',
 			yellow: '#ffc82c',
 			'gray-dark': '#273444',
 			gray: '#f9f9f9',
-			graylight: '#d3dce6'
+			graylight: '#d3dce6',
+			darkGray : '#202A37',
+			darkBG : '#111827',
+			textgray : '#D1D5DB',
+			navTextDark : '#E5E7EB',
+			border :'#202A37'
 		},
 		fontFamily: {
 			lato: ['Lato'],

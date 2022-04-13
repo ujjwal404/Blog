@@ -14,9 +14,14 @@
 	@apply rounded;
 }
 
+.markdown code{
+	@apply text-blacktwo;
+}
+
 .markdown code {
 	@apply inline-block px-5 py-2 w-full;
 }
+
 
 .markdown h1 {
 	@apply text-4xl font-semibold;
