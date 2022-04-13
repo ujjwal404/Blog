@@ -16,4 +16,4 @@ LINKS :
 
 - https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6
 - https://github.com/timlrx/tailwind-nextjs-starter-blog
-- UI : https://linuxize.com/
+- UI : https://linuxize.com/ 
