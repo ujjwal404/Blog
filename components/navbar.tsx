@@ -1,6 +1,6 @@
 import ThemeSwitch from './themeSwitch'
 import Link from 'next/link';
-import logo from '../public/favicon.ico'
+import logo from '../public/logo.webp'
 import Image from 'next/image'
 
 function getRandomString() {

@@ -12,12 +12,12 @@ const Home = ({ allPostsData }: Props) => {
 	return (
 		<div className="flex flex-col max-w-6xl mx-auto divide-y dark:divide-border divide-graylight">
 			{allPostsData.map((post,idx) => (
-				<div key={idx} className='m-2 h-36'>
+				<div key={idx} className='m-2 h-36 relative'>
 					<Link href={`/posts/${post.slug}`}>
 							<a>
-									<div className="flex w-full flex-row justify-between">
-										<div className='relative'>
-											<div className='w-full mt-12'>
+									<div className="flex w-full flex-row justify-between absolute top-4">
+										<div className=''>
+											<div className='w-full'>
 													<div className='text-3xl'>
 															{post.title}
 													</div>
@@ -26,8 +26,8 @@ const Home = ({ allPostsData }: Props) => {
 													</div>
 											</div>
 										</div>
-										<div className='mt-3'>
-													<Image src={`/${post.coverImage}`} height={130} width={180} alt="coverImage"/>
+										<div className='h-[125px] w-[250px] bg-blue overflow-hidden'>
+													<Image src={`/${post.coverImage}`} height={150} width={250} alt="coverImage" className='overflow-hidden'/>
 										</div>
 									</div>
 							</a>		

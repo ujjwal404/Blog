@@ -2,7 +2,7 @@
 title: 'Second blog'
 date: '2021-01-01'
 excerpt: 'excerpt of second blog'
-coverImage: 'static/images/b.png'
+coverImage: 'static/images/b.webp'
 ---
 
 # Yo
@@ -13,8 +13,6 @@ coverImage: 'static/images/b.png'
 
 # [Table of Contents](https://google.com)
 
-
-![ocean](/static/images/a.png)
 
 - [Yo](#yo)
   - [hhey](#hhey)
