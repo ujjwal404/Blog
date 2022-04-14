@@ -14,11 +14,11 @@ const About = () => {
           
           <div className="flex flex-col">
             <p className="mb-4 text-2xl font-bold leading-normal md:text-2xl mt-2">
-              Hello👋,  I'm Ujjwal.
+              Hello👋, &nbsp; I&apos;m Ujjwal.
             </p>
             <p className="mb-8 text-xl">
-              I'm a pre-final year computer science undergrad at Netaji Subhas Institute of Technology, New Delhi.
-              I write about web development, machine learning, and other things that I find interesting.
+              I&apos;m a pre-final year computer science undergrad at Netaji Subhas Institute of Technology,&nbsp; New Delhi.&nbsp;
+              I write about web development,&nbsp; machine learning,&nbsp; and other things that I find interesting.
             </p>
             <Link href={'/'}>
               <a>
