@@ -3,7 +3,7 @@
 - [x] Render Pages 
 - [x] Render content 
 - [x] Add Dark theme
-- [ ] Add images
+- [x] Add images
 - [ ] Add some blogs
 - [ ] Define requirements 
 - [ ] Add tags 
