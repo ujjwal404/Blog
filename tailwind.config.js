@@ -29,6 +29,7 @@ module.exports = {
 			darkGray : '#202A37',
 			darkBG : '#111827',
 			textgray : '#D1D5DB',
+			postColor : '#282F3C',
 			navTextDark : '#E5E7EB',
 			border :'#202A37'
 		},

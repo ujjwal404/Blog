@@ -26,7 +26,7 @@ const Home = ({ allPostsData }: Props) => {
 													</div>
 											</div>
 										</div>
-										<div className='h-[125px] w-[250px] bg-blue overflow-hidden'>
+										<div className='h-[125px] w-[250px] overflow-hidden'>
 													<Image src={`/${post.coverImage}`} height={150} width={250} alt="coverImage" className='overflow-hidden'/>
 										</div>
 									</div>

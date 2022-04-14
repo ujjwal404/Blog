@@ -15,11 +15,11 @@ const Navbar = () => {
 				<div className='absolute inset-x-0 bottom-0 flex justify-between m-1'>
 				<Link href={'/'}>
 			
-				<a><div className='flex ml-10'>
+				<a><div className='flex ml-10 mt-2'>
 					<div>
 						<Image src={logo} height={35} width={35} alt="logo"/>
 					</div>
-					<h1 className='text-4xl ml-2 mb-2'>
+					<h1 className='text-4xl ml-2 mb-1'>
 					
 					Macros</h1>
 					</div>
