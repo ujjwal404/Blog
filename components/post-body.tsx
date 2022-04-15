@@ -1,15 +1,30 @@
-import markdownStyles from './markdown-styles.module.css';
-
+import hljs from 'highlight.js'
+import MarkdownIt from 'markdown-it'
 type Props = {
 	content: string;
 };
 
+const md:any = new MarkdownIt({
+        highlight: function (str, lang) {
+          if (lang && hljs.getLanguage(lang)) {
+            try {
+              return '<pre class="hljs"><code>' +
+                     hljs.highlight(lang, str, true).value +
+                     '</code></pre>';
+            } catch (err) {console.log(err)}
+          }
+      
+          return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+        }
+      });
+
 const PostBody = ({ content }: Props) => {
 	return (
-		<div className="max-w-3xl mx-auto">
-			<div className={markdownStyles['markdown']} dangerouslySetInnerHTML={{ __html: content }} />
+		<div className="prose dark:prose-invert max-w-3xl mx-auto">
+			<div dangerouslySetInnerHTML={{ __html: md.render(content)}} />
 		</div>
 	);
 };
 
 export default PostBody;
+//className={markdownStyles['markdown']}

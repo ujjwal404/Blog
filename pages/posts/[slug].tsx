@@ -4,6 +4,7 @@ import markdownToHtml from '../../lib/markdownToHtml';
 import Date from '../../components/date';
 import Head from 'next/head';
 import PostBody from '../../components/post-body';
+import Image from 'next/image';
 
 export default function Post({ post }: any) {
 	return (
@@ -14,11 +15,15 @@ export default function Post({ post }: any) {
 			<div className="max-w-4xl mx-auto mt-10">
 			<h1 className='text-5xl'>
 			{post.title}
+			
 			</h1>
-
 			<Date dateString={post.date} />
+
 			<br />
-						<br />
+			<br />
+			<div className='w-100'>
+			<Image src={`/${post.coverImage}`} height="60%" width="100%" layout="responsive" objectFit="contain" alt="coverImage"/>
+			</div>
 			</div>
 			<PostBody content={post.content} />
 		</div>
@@ -40,13 +45,14 @@ export async function getStaticProps({ params }: Params) {
 		'ogImage',
 		'coverImage'
 	]);
-	const content = await markdownToHtml(post.content || '');
+
+	// use this to render html instead of md content
+	// const content = await markdownToHtml(post.content || '');
 
 	return {
 		props: {
 			post: {
-				...post,
-				content
+				...post
 			}
 		}
 	};

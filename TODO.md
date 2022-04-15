@@ -9,9 +9,9 @@
 - [ ] Define requirements 
 - [ ] Add tags 
 - [ ] Add pagination 
-- [ ] Define color themes 
-- [ ] Add syntax highlighting 
-- [ ] Start adding css 
+- [x] Define color themes 
+- [x] Add syntax highlighting 
+- [x] Start adding css 
 
 LINKS :
 
