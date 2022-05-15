@@ -12,6 +12,7 @@
 - [x] Define color themes 
 - [x] Add syntax highlighting 
 - [x] Start adding css 
+- [x] Make site reponsive
 
 LINKS :
 

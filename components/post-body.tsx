@@ -20,7 +20,7 @@ const md:any = new MarkdownIt({
 
 const PostBody = ({ content }: Props) => {
 	return (
-		<div className="prose dark:prose-invert max-w-3xl mx-auto">
+		<div className="prose dark:prose-invert px-4 md:px-0 max-w-4xl mx-auto">
 			<div dangerouslySetInnerHTML={{ __html: md.render(content)}} />
 		</div>
 	);

@@ -3,20 +3,20 @@ import projectsData from '../data/projectsData'
 
 const About = () => {
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="px-2 max-w-5xl mx-auto">
       <div className="flex flex-col divide-y divide-border">
         <div className="space-y-6">
           <div className="flex flex-col">
-            <h1 className="text-4xl mt-10 font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:border-l-2 md:px-6 md:text-6xl md:leading-14">
+            <h1 className="text-2xl mt-10 font-extrabold leading-3 tracking-tight text-gray-900 dark:text-gray-100 md:border-l-2 md:px-6 md:text-6xl md:leading-14">
               About Me
             </h1>
           </div>
 
           <div className="flex flex-col">
-            <p className="mb-4 text-2xl font-bold leading-normal md:text-2xl mt-2">
+            <p className="mb-2 text-xl font-bold leading-normal md:text-2xl">
               Hello👋, &nbsp; I&apos;m Ujjwal.
             </p>
-            <p className="mb-8 text-xl">
+            <p className="mb-6 text-sm md:text-xl">
               I&apos;m a pre-final year computer science undergrad at Netaji
               Subhas Institute of Technology,&nbsp; New Delhi.&nbsp; I write
               about web development,&nbsp; machine learning,&nbsp; and other
@@ -25,20 +25,20 @@ const About = () => {
           </div>
 
           <div className="flex flex-col">
-            <h1 className="text-4xl mt-10 font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:border-l-2 md:px-6 md:text-6xl md:leading-14 mb-10">
+            <h1 className="text-2xl md:mt-10 font-extrabold leading-3 tracking-tight text-gray-900 dark:text-gray-100 md:border-l-2 md:px-6 md:text-6xl md:leading-14 mb-5 md:mb-7">
               My Projects
             </h1>
             <div className="grid gap-2 grid-cols-2 grid-rows-3">
               {projectsData.map((project, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col p-5 border rounded-lg hover:bg-gray dark:hover:bg-postColor hover:border-dashed"
+                  className="flex flex-col p-2 md:p-5 border rounded-lg md:hover:bg-gray md:dark:hover:bg-postColor md:hover:border-dashed"
                 >
                   <div className="flex flex-col">
-                    <h2 className="text-2xl font-bold leading-normal md:text-2xl mt-2">
+                    <h2 className="text-md md:text-2xl font-bold leading-normal mt-2">
                       {project.title}
                     </h2>
-                    <p className="text-xl font-thin">{project.description}</p>
+                    <p className="text-xs md:text-xl font-thin">{project.description}</p>
 
                     <div className="flex flex-row justify-between">
                       <div className="flex flex-row mt-2">
@@ -49,7 +49,7 @@ const About = () => {
                           className="text-sm text-gray-600 hover:text-gray-900"
                         >
                           <svg
-                            className="h-5 w-5"
+                            className="h-4 w-4 md:h-5 md:w-5"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                           >
@@ -63,7 +63,7 @@ const About = () => {
                           className="text-sm text-gray-600 hover:text-gray-900 ml-2"
                         >
                           <svg
-                            className="h-5 w-5"
+                            className="h-4 w-4 md:h-5 md:w-5"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                           >
@@ -79,23 +79,23 @@ const About = () => {
           </div>
 
           <div className="flex flex-col">
-            <h1 className="text-4xl mt-10 font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:border-l-2 md:px-6 md:text-6xl md:leading-14">
+            <h1 className="text-2xl mt-3 md:mt-10 font-extrabold leading-3 tracking-tight text-gray-900 dark:text-gray-100 md:border-l-2 md:px-6 md:text-6xl md:leading-14">
               My Credentials
             </h1>
           </div>
 
           <div className="flex flex-col">
-            <div className="table w-full ">
-                <div className="table-row-group w-full p-10">
+            <div className="table w-full mb-3 ">
+                <div className="table-row-group w-full md:p-10 text-sm md:text-lg">
                   <div className="table-row w-full">
-                    <div className="table-cell p-2">LinkedIn</div>
-                    <div className="table-cell p-2 text-blue">
+                    <div className="table-cell p-1 md:p-2">LinkedIn</div>
+                    <div className="table-cell p-1 md:p-2 text-blue">
                       <a href="https://www.linkedin.com/in/ujjwalkadam" target="_blank" rel="noopener noreferrer">
                       Ujjwal Kadam</a>
                       </div>
                   </div>
                   <div className="table-row">
-                        <div className="table-cell p-2 ">Github</div>
+                        <div className="table-cell p-1 md:p-2 ">Github</div>
                         <div className="table-cell p-2 text-blue">
                           <a href="https://github.com/ujjwal404" target="_blank" rel="noopener noreferrer">
                           ujjwal404
@@ -103,31 +103,32 @@ const About = () => {
                           </div>
                   </div>
                   <div className="table-row">
-                    <div className="table-cell p-2 ">Email</div>
-                    <div className="table-cell p-2 text-blue">
+                    <div className="table-cell p-1 md:p-2 ">Email</div>
+                    <div className="table-cell p-1 md:p-2 text-blue">
                        <a href="mailto:ujjwalkadam68@gmai.com" target="_blank" rel="noopener noreferrer">
                       ujjwalkadam68@gmail.com
                       </a>
                       </div>
                   </div>
-                </div>
+               
+                  <div className="table-row">
+                      <div className="table-cell p-1 md:p-2 ">Resume</div>
+                      <div className="table-cell p-1 md:p-2 text-blue">
+                        <a href="https://drive.google.com/file/d/1ZFWb-yyyA0hwQMDg38v4sR_3vWxoqwq_/view?usp=sharing">
+                        Drive Link
+                        </a>
+                      </div>
+                  </div>
+              
                 <div className="table-row">
-                    <div className="table-cell p-2 ">Resume</div>
-                    <div className="table-cell p-2 text-blue">
-                       <a href="https://drive.google.com/file/d/1ZFWb-yyyA0hwQMDg38v4sR_3vWxoqwq_/view?usp=sharing">
-                      Drive Link
+                    <div className="table-cell p-1 md:p-2 ">Leetcode Profile</div>
+                    <div className="table-cell p-1 md:p-2 text-blue">
+                        <a href="https://leetcode.com/ujjwal41/" target="_blank" rel="noopener noreferrer">
+                      ujjwal41
                       </a>
                     </div>
-                </div>
-            
-              <div className="table-row">
-                  <div className="table-cell p-2 ">Leetcode Profile</div>
-                  <div className="table-cell p-2 text-blue">
-                      <a href="https://leetcode.com/ujjwal41/" target="_blank" rel="noopener noreferrer">
-                    ujjwal41
-                    </a>
-                  </div>
-              </div>  
+                </div>  
+               </div>
               </div>
           </div>
 

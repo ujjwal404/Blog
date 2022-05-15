@@ -12,13 +12,14 @@ export default function Post({ post }: any) {
 			<Head>
 				<title>{post.title}</title>
 			</Head>
-			<div className="max-w-4xl mx-auto mt-10">
-			<h1 className='text-5xl'>
+			<div className="p-2 md:p-0 md:max-w-4xl mx-auto mt-10">
+			<h1 className='text-3xl md:text-5xl'>
 			{post.title}
 			
 			</h1>
+			<div className='text-xs md:text-sm mt-1'>
 			<Date dateString={post.date} />
-
+			</div>
 			<br />
 			<br />
 			<div className='w-100'>

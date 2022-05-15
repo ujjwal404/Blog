@@ -18,15 +18,15 @@ const Home = ({ allPostsData }: Props) => {
 									<div className="flex w-full flex-row justify-between absolute top-4">
 										<div className=''>
 											<div className='w-full'>
-													<div className='text-3xl'>
+													<div className='text-xl md:text-3xl'>
 															{post.title}
 													</div>
-													<div className="flex flex-col">
+													<div className="flex flex-col text-graylight text-xs md:text-md ">
 														<p><Date dateString={post.date} /></p>
 													</div>
 											</div>
 										</div>
-										<div className='h-[125px] w-[250px] overflow-hidden'>
+										<div className='h-[125px] w-[150px] md:w-[250px] overflow-hidden'>
 													<Image src={`/${post.coverImage}`} height={180} width={320} alt="coverImage" className='overflow-hidden'/>
 										</div>
 									</div>
