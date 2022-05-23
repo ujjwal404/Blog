@@ -3,6 +3,7 @@ import { getAllPosts } from '../lib/api';
 import Post from '../types/post';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 type Props = {
 	allPostsData: Post[];
@@ -10,6 +11,10 @@ type Props = {
 
 const Home = ({ allPostsData }: Props) => {
 	return (
+		<>
+		<Head>
+			<meta name="google-site-verification" content="VMKLgSKiJSvHQiP5Zz206eR_XEJMRpg0ghr0Agh1AN8" />
+		</Head>
 		<div className="flex flex-col max-w-6xl mx-auto divide-y dark:divide-border divide-graylight">
 			{allPostsData.map((post,idx) => (
 				<div key={idx} className='m-2 h-36 relative'>
@@ -34,7 +39,8 @@ const Home = ({ allPostsData }: Props) => {
 					</Link>
 				</div>
 			))}
-		</div>
+			</div>
+		</>
 	);
 };
 
