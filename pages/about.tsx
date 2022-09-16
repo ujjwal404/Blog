@@ -17,10 +17,10 @@ const About = () => {
               Hello👋, &nbsp; I&apos;m Ujjwal.
             </p>
             <p className="mb-6 text-sm md:text-xl">
-              I&apos;m a pre-final year computer science undergrad at Netaji
+              I&apos;m a final year computer science undergrad at Netaji
               Subhas Institute of Technology,&nbsp; New Delhi.&nbsp; I write
               about web development,&nbsp; machine learning,&nbsp; and other
-              things that I find interesting.
+              things that I find interesting. 
             </p>
           </div>
 
