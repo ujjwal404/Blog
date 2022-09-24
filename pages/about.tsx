@@ -114,7 +114,7 @@ const About = () => {
                   <div className="table-row">
                       <div className="table-cell p-1 md:p-2 ">Resume</div>
                       <div className="table-cell p-1 md:p-2 text-blue">
-                        <a href="https://drive.google.com/file/d/1ZFWb-yyyA0hwQMDg38v4sR_3vWxoqwq_/view?usp=sharing">
+                        <a href="https://tinyurl.com/myresumex">
                         Drive Link
                         </a>
                       </div>
