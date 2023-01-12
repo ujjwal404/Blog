@@ -13,7 +13,8 @@ const Home = ({ allPostsData }: Props) => {
 	return (
 		<>
 		<Head>
-			<meta name="google-site-verification" content="VMKLgSKiJSvHQiP5Zz206eR_XEJMRpg0ghr0Agh1AN8" />
+				<meta name="google-site-verification" content="VMKLgSKiJSvHQiP5Zz206eR_XEJMRpg0ghr0Agh1AN8" />
+				<meta name="description" content="Personal Blog site. I write about Web dev, ML and other things that I find interesting." />
 		</Head>
 		<div className="flex flex-col max-w-6xl mx-auto divide-y dark:divide-border divide-graylight">
 			{allPostsData.map((post,idx) => (

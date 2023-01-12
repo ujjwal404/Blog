@@ -5,7 +5,7 @@
 - [x] Add Dark theme
 - [x] Add images
 - [x] Add About me page
-- [ ] Add some blogs
+- [x] Add some blogs
 - [ ] Define requirements 
 - [ ] Add tags 
 - [ ] Add pagination 

@@ -11,7 +11,7 @@ const Layout = ({ children }: Props) => {
 		<div className="min-h-screen flex flex-col dark:bg-darkBG dark:text-textgray">
 			<Head>
 				<title>Macros</title>
-				<meta name="description" content="Personal Blog site" />
+				<meta name="description" content="Personal Blog site. I write about Web dev, ML and other things that I find interesting." />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<header>

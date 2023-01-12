@@ -1,11 +1,11 @@
 ---
-title: 'Goroutines'
-date: '2022-04-15'
+title: 'Intro to Goroutines'
+date: '2022-05-26'
 excerpt: 'Using goroutines'
 coverImage: 'static/images/goroutines.webp'
 ---
 
-Goroutines are a lightweight form of concurrency in the Go programming language. They are similar to threads in other languages, but they are managed by the Go runtime rather than the operating system, making them more lightweight and efficient. In this blog post, we will learn about goroutines, how to use them, and some best practices for writing concurrent code in Go.
+**Goroutines** are a lightweight form of concurrency in the Go programming language. They are similar to threads in other languages, but they are managed by the Go runtime rather than the operating system, making them more lightweight and efficient. In this blog post, we will learn about goroutines, how to use them, and some best practices for writing concurrent code in Go.
 
 A goroutine is created by calling the go keyword followed by a function call. For example, the following code creates a goroutine that runs the printHello function:
 
