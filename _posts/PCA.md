@@ -23,7 +23,7 @@ The PCA algorithm can be broken down into the following steps:
 
 Now let's see how to implement PCA from scratch in Python using Numpy library:
 
-```
+```py
 import numpy as np
 
 def pca(X, n_components):
