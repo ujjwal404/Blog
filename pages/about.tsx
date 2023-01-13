@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import projectsData from '../data/projectsData'
+import Image from 'next/image'
+import Github from '../public/static/github.svg'
 
 const About = () => {
   return (
@@ -23,6 +25,7 @@ const About = () => {
               things that I find interesting. 
             </p>
           </div>
+
 
           <div className="flex flex-col">
             <h1 className="text-2xl md:mt-10 font-extrabold leading-3 tracking-tight text-gray-900 dark:text-gray-100 md:border-l-2 md:px-6 md:text-6xl md:leading-14 mb-5 md:mb-7">
@@ -85,7 +88,7 @@ const About = () => {
           </div>
 
           <div className="flex flex-col">
-            <div className="table w-full mb-3 ">
+            <div className="table w-full mb-1">
                 <div className="table-row-group w-full md:p-10 text-sm md:text-lg">
                   <div className="table-row w-full">
                     <div className="table-cell p-1 md:p-2">LinkedIn</div>
@@ -131,7 +134,9 @@ const About = () => {
                </div>
               </div>
           </div>
-
+          <div className="flex flex-row">
+                <Image src={ Github } height={ 300 } width={ 1300 } alt="github" />
+            </div>
 
           {/* <Link href={'/'}>
               <a>
