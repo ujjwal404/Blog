@@ -2,6 +2,7 @@ import ThemeSwitch from './themeSwitch'
 import Link from 'next/link';
 import logo from '../public/logo.webp'
 import Image from 'next/image'
+import Head from 'next/head';
 
 function getRandomString() {
 	return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
@@ -10,6 +11,10 @@ function getRandomString() {
 const Navbar = () => {
 
 	return (
+		<div>
+			<Head>
+				<meta name="description" content="Ujjwal Kadam. Personal Blog site." />
+			</Head>
 		<div className='h-12 pt-2 md:h-14 lg:h-16 w-full dark:bg-darkGray dark:text-navTextDark shadow'>
 			<div className='w-full flex relative h-full'>
 				<div className='absolute inset-x-0 bottom-0 flex justify-between m-1'>
@@ -17,12 +22,12 @@ const Navbar = () => {
 			
 				<a><div className='flex ml-4 md:ml-10 mt-3'>
 					<div className='w-6 h-6 md:w-8 md:h-8 mt-3 md:mt-2 lg:mt-2' >
-						<Image src={logo} height={35} width={35} layout="responsive" alt="logo"/>
+						<Image src={logo} height={35} width={35} layout="responsive" alt="Ujjwal Kadam - blogsite"/>
 					</div>
 					<div className="md:mt-1">
 					<h1 className='text-xl mt-3 sm:mt-0 md:text-2xl lg:text-4xl ml-2'>
-					
-					Macros</h1>
+						Macros
+					</h1>
 					</div>
 					</div>
 					</a>
@@ -31,7 +36,7 @@ const Navbar = () => {
 				<div className='mt-3'>
 					<Link href={'/about'}>
 						<a>
-						<Image src={`https://avatars.dicebear.com/api/bottts/${getRandomString()}.svg`} height={23} width={23} alt="about"/>
+						<Image src={`https://avatars.dicebear.com/api/bottts/${getRandomString()}.svg`} height={23} width={23} alt="about me"/>
 						</a>
 					</Link>
 						<ThemeSwitch />
@@ -41,7 +46,7 @@ const Navbar = () => {
 				</div>
 			</div>
 		</div>
-
+	</div>
 	);
 };
 export default Navbar;

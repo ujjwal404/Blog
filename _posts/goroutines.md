@@ -1,5 +1,5 @@
 ---
-title: 'Intro to Goroutines'
+title: 'Concurrency in Go'
 date: '2022-05-26'
 excerpt: 'Using goroutines'
 coverImage: 'static/images/goroutines.webp'
