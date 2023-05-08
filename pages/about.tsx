@@ -2,9 +2,15 @@ import Link from 'next/link'
 import projectsData from '../data/projectsData'
 import Image from 'next/image'
 import Github from '../public/static/github.svg'
+import Head from 'next/head'
 
 const About = () => {
   return (
+    <>
+		<Head>
+				<meta name="google-site-verification" content="VMKLgSKiJSvHQiP5Zz206eR_XEJMRpg0ghr0Agh1AN8" />
+				<meta name="description" content="Hi I am Ujjwal. Final year CS undergrad at NSUT, Delhi. I write blogs sometimes." />
+		</Head>
     <div className="px-2 max-w-5xl mx-auto">
       <div className="flex flex-col divide-y divide-border">
         <div className="space-y-6">
@@ -35,16 +41,16 @@ const About = () => {
               {projectsData.map((project, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col p-2 md:p-5 border rounded-lg md:hover:bg-gray md:dark:hover:bg-postColor md:hover:border-dashed"
+                  className="flex flex-col p-2 md:p-5  rounded-lg md:hover:bg-gray md:dark:hover:bg-postColor md:hover:border-dashed"
                 >
                   <div className="flex flex-col">
-                    <h2 className="text-md md:text-2xl font-bold leading-normal mt-2">
+                    <h2 className="text-md md:text-2xl font-bold leading-normal mt-2 h-full">
                       {project.title}
                     </h2>
-                    <p className="text-xs md:text-xl font-thin">{project.description}</p>
+                    <p className="text-sm md:text-md font-thin">{project.description}</p>
 
                     <div className="flex flex-row justify-between">
-                      <div className="flex flex-row mt-2">
+                      <div className="flex flex-row mt-3">
                         <a
                           href={project.github}
                           target="_blank"
@@ -147,7 +153,8 @@ const About = () => {
             </Link> */}
         </div>
       </div>
-    </div>
+      </div>
+      </>
   )
 }
 

@@ -1,4 +1,16 @@
 const projectsData = [
+   {
+    title: 'Currency Detection for Visually Impaired',
+    description: 'Currency Detection for Visually Impaired people using edge devices like RaspberryPi. It uses a pre-trained CNN model to detect currency and then uses text-to-speech to read out the denomination. Trained on a custom dataset of 1000+ images of INR.',
+    live : 'https://www.youtube.com/shorts/U-Lis5e01yQ?feature=share',
+    github: 'https://github.com/ujjwal404/CurrencyDetectionForVisuallyImpaired'
+  },
+   {
+    title: 'Hazardous Object Detection for Visually Impaired',
+    description: 'Hazardous Object Detection for Visually Impaired people using edge devices like RaspberryPi. It uses a pre-trained YoLo model to detect hazardous objects and then uses text-to-speech to read out the object. Trained on a custom dataset of 1000+ images of hazardous objects.',
+    live : 'https://github.com/ujjwal404/HazardousObjectDetectionForVisuallyImpaired',
+    github: 'https://github.com/ujjwal404/HazardousObjectDetectionForVisuallyImpaired'
+  },
   {
     title: 'Vault',
     description: 'A cross-platform, offline, react-electron app that enables users to store their confidential files by encrypting them with the AES algorithm. It stores data in User\'s own PC and passwords in OS\'s password manager.',
