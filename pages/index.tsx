@@ -12,10 +12,12 @@ type Props = {
 const Home = ({ allPostsData }: Props) => {
 	return (
 		<>
-		<Head>
+			<Head>
+				<title>Home | Blog</title>
 				<meta name="google-site-verification" content="VMKLgSKiJSvHQiP5Zz206eR_XEJMRpg0ghr0Agh1AN8" />
-				<meta name="description" content="Welcome to my personal blog where I share my insights on web development, machine learning, and other topics that pique my interest. Get expert advice, tips, and tutorials from an experienced developer. Stay updated with the latest trends and developments in the tech world. Join me on my journey of discovery and learning." />
-		</Head>
+				<meta name="description" content="Welcome to my personal blog where I share my insights on web development, ml, and other topics that pique my interest.  Join me on my journey of learning." />
+			</Head>
+			
 		<div className="flex flex-col max-w-6xl mx-auto divide-y dark:divide-border divide-graylight">
 			{allPostsData.map((post,idx) => (
 				<div key={idx} className='m-2 h-36 relative'>
