@@ -13,7 +13,7 @@ const Home = ({ allPostsData }: Props) => {
 	return (
 		<>
 			<Head>
-				<title>Home | Blog</title>
+				<title>Home | Ujjwal&apos;s blogs</title>
 				<meta name="google-site-verification" content="VMKLgSKiJSvHQiP5Zz206eR_XEJMRpg0ghr0Agh1AN8" />
 				<meta name="description" content="Welcome to my personal blog where I share my insights on web development, ml, and other topics that pique my interest.  Join me on my journey of learning." />
 			</Head>
