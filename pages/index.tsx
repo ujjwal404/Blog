@@ -14,7 +14,7 @@ const Home = ({ allPostsData }: Props) => {
 		<>
 		<Head>
 				<meta name="google-site-verification" content="VMKLgSKiJSvHQiP5Zz206eR_XEJMRpg0ghr0Agh1AN8" />
-				<meta name="description" content="Personal Blog site. I write about Web dev, ML and other things that I find interesting." />
+				<meta name="description" content="Welcome to my personal blog where I share my insights on web development, machine learning, and other topics that pique my interest. Get expert advice, tips, and tutorials from an experienced developer. Stay updated with the latest trends and developments in the tech world. Join me on my journey of discovery and learning." />
 		</Head>
 		<div className="flex flex-col max-w-6xl mx-auto divide-y dark:divide-border divide-graylight">
 			{allPostsData.map((post,idx) => (

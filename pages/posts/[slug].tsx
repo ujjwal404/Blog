@@ -10,7 +10,8 @@ export default function Post({ post }: any) {
 	return (
 				<div>
 			<Head>
-				<title>{post.title}</title>
+				<title>{ post.title }</title>
+				<meta name="description" content={post.excerpt} />
 			</Head>
 			<div className="p-2 md:p-0 md:max-w-4xl mx-auto mt-10">
 			<h1 className='text-3xl md:text-5xl'>
@@ -44,7 +45,8 @@ export async function getStaticProps({ params }: Params) {
 		'slug',
 		'content',
 		'ogImage',
-		'coverImage'
+		'coverImage',
+		'excerpt'
 	]);
 
 	// use this to render html instead of md content

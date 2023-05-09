@@ -1,7 +1,7 @@
 ---
 title: 'Principal Component Analysis'
 date: '2022-04-15'
-excerpt: 'Explaination and Implementation of PCA from scratch in python.'
+excerpt: 'Learn how Principal Component Analysis can help you reduce the dimensions of your dataset and extract meaningful insights from your data. Follow along as we implement PCA from scratch and gain a deeper understanding of this powerful machine learning technique.'
 coverImage: 'static/images/PCA.webp'
 ---
 

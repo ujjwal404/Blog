@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<ThemeProvider attribute="class">
 			<Layout>
 				 <Head>
-        <meta name="keywords" content="blogs ujjwal blogsite" />
+        <meta name="keywords" content="blogs ujjwal blogsite Ujjwal kadam ujjwalkadam blog NSUT" />
         <meta name="author" content="Ujjwal" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>

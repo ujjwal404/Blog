@@ -1,7 +1,7 @@
 ---
 title: 'Concurrency in Go'
 date: '2022-05-26'
-excerpt: 'Using goroutines'
+excerpt: 'Learn how to improve your Go programs with concurrency. Discover the benefits of Gos built-in concurrency features and see how they can help you write faster and more efficient code.'
 coverImage: 'static/images/goroutines.webp'
 ---
 

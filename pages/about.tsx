@@ -9,7 +9,7 @@ const About = () => {
     <>
 		<Head>
 				<meta name="google-site-verification" content="VMKLgSKiJSvHQiP5Zz206eR_XEJMRpg0ghr0Agh1AN8" />
-				<meta name="description" content="Hi I am Ujjwal. Final year CS undergrad at NSUT, Delhi. I write blogs sometimes." />
+				<meta name="description" content="Get to know Ujjwal, a final year CS undergrad at NSUT, Delhi, who occasionally shares his insights and experiences through blogging on topics ranging from web development to machine learning." />
 		</Head>
     <div className="px-2 max-w-5xl mx-auto">
       <div className="flex flex-col divide-y divide-border">
