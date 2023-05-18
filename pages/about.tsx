@@ -115,7 +115,7 @@ const About = () => {
                   <div className="table-row">
                     <div className="table-cell p-1 md:p-2 ">Email</div>
                     <div className="table-cell p-1 md:p-2 text-blue">
-                       <a href="mailto:ujjwalkadam68@gmai.com" target="_blank" rel="noopener noreferrer">
+                       <a href="mailto:ujjwalkadam68@gmail.com" target="_blank" rel="noopener noreferrer">
                       ujjwalkadam68@gmail.com
                       </a>
                       </div>

@@ -2,7 +2,7 @@ const projectsData = [
    {
     title: 'Currency Detection for Visually Impaired',
     description: 'Currency Detection for Visually Impaired people using edge devices like RaspberryPi. It uses a pre-trained CNN model to detect currency and then uses text-to-speech to read out the denomination. Trained on a custom dataset of 1000+ images of INR.',
-    live : 'https://www.youtube.com/shorts/U-Lis5e01yQ?feature=share',
+    live : 'https://www.youtube.com/shorts/U-Lis5e01yQ',
     github: 'https://github.com/ujjwal404/CurrencyDetectionForVisuallyImpaired'
   },
    {
